@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ToDolist!</title>
+	<link rel="stylesheet" type="text/css" href="./todolist.css">
+</head>
+
+<body>
+
+	<header>
+		<section>
+			<label for="add_list">My todolist</label>
+			<input type="text" id="add_list" name="add_list" placeholder="写下一些要做的事情吧！" required="required">
+		</section>
+	</header>
+
+	<p class="list">
+		<h1>加油哦！还有这些没做~<span id="todocount"></span></h1>
+		<ol id="havetodo"></ol>
+		<h1>好棒好棒！已经完成这么多了！<span id="donecount"></span></h1>
+		<ol id="havedone"></ol>
+	</p>
+
+	<p id="clear">
+		<span style="white-space: pre;"></span>
+		<button id="clearbutton"><h3>收工！略略略~</h3></button>
+	</p>
+	<footer>
+		<section>
+			<p align="center">Copyright&copy;2018 by Beau Chen</p>
+		</section>
+	</footer>
+	<script type="text/javascript" src="./todolist.js"></script>
+</body>
+</html>
