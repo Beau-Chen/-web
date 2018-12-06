@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="toDoMvc.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>My ToDoMvc</title>
+    <style>
+        @media (max-width: 800px ) {
+            .leftNav {
+                display: none;
+            }
+
+            .main {
+                width: 90%;
+            }
+        }
+        @media (min-width: 800px )and (max-width: 1200px){
+        .main{
+            width: 60%;
+        }
+    }
+        @media (max-device-width: 800px ) {
+            .leftNav {
+                display: none;
+            }
+            .main {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1 class="mainHeader">todos</h1>
+    <input class="newInput" id="newInput" type="text" placeholder="What needs to be done?" autofocus autocomplete="off"
+           required="required">
+    <div class="todoContent">
+        <ul class="todoList">
+        </ul>
+    </div>
+    <div class="todoFooter">
+        <div>
+            <span class="todoCount"></span>
+            <span>items left</span>
+        </div>
+        <button class="clearCompleted" onclick="todoList.clearComplete()">Clear completed</button>
+    </div>
+</div>
+</body>
+<script src="toDoMvc.js" type="text/javascript"></script>
+</html>

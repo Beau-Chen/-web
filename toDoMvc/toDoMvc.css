@@ -1,0 +1,183 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+a {
+	text-decoration: none;
+	}
+
+body {
+	font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	display: flex;
+	background: #f5f5f5;
+	box-shadow: inset 0 -2px 1px rgba(0, 0, 0, .03);
+	}
+
+div,
+h1,
+h3,
+h5,
+p,
+header,
+aside,
+blockquote,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+.leftNav {
+	display: flex;
+	background: rgb(251, 251, 251);
+	flex-flow: column;
+	flex: 0 0 300px;
+	}
+
+.leftNav h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	}
+
+.leftNav h5 {
+	font-size: 15px;
+	}
+
+.leftNav a {
+	font-size: 15px;
+	color: red;
+	}
+
+.leftNav blockquote {
+	margin: 10px;
+	background-color: rgb(241, 241, 241);
+	}
+
+.leftNav blockquote p {
+	font-style: italic;
+	}
+
+.leftNav footer {
+	margin: 10px;
+	}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 0 auto;
+	align-items: center;
+	}
+
+.mainHeader {
+	font-size: 100px;
+	font-weight: 100;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	color: rgba(175, 47, 47, .15);
+	flex: 0 0 auto;
+	}
+
+.newInput {
+	font-family: inherit;
+	font-size: 24px;
+	font-weight: lighter;
+	width: 100%;
+	padding: 16px 16px 16px 60px;
+	border: none;
+	}
+
+::placeholder {
+	font-weight: lighter;
+	font-style: italic;
+	}
+
+.view {
+	font-size: 24px;
+	font-weight: inherit;
+	font-style: inherit;
+	display: flex;
+	width: 100%;
+	height: 45px;
+	border: black;
+	}
+
+.view label {
+	margin: auto 0;
+	flex: 1;
+	}
+
+.todoContent {
+	width: 100%;
+	background-color: white;
+	}
+
+.toggle {
+	max-width: 28px;
+	max-height: 28px;
+	margin: auto 10px;
+	flex: 0 0 60px;
+	}
+
+.view button {
+	display: block;
+	height: 50%;
+	margin: auto 10px;
+	flex: 0 0 16px;
+	}
+
+.doneList {
+	text-decoration: line-through;
+	color: lightgray;
+	}
+
+.todoFooter {
+	display: flex;
+	width: 100%;
+	height: 30px;
+	color: gray;
+	background: white;
+	}
+
+.todoFooter div {
+	margin: auto auto auto 20px;
+	}
+
+.clearCompleted {
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	background: white;
+	}
+
+.clearCompleted:hover {
+	text-decoration: underline;
+	}
+
+.destroy {
+	border: none;
+	background: white;
+	}
+
+.destroy img {
+	display: none;
+	height: 100%;
+	}
+
+.todo:hover img,
+.done:hover img {
+	display: block;
+	}
+
+.todoContent label input {
+	font-size: 24px;
+	width: 100%;
+	height: 28px;
+	}
+
